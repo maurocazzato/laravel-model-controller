@@ -15,4 +15,5 @@ class PageController extends Controller
         // Restituisci la vista con i dati dei film
         return view('pages.index', compact('movies'));
     }
+    
 }
