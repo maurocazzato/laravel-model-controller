@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+// routes/web.php
 
-Route::get('/', function () {
+use App\Http\Controllers\Guest\PageController;
 
-    return view('pages.index');
-});
+Route::get('/', [PageController::class, 'index']);
